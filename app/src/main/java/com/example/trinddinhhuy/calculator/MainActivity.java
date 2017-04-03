@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
         connectToView();
 
+        setListener();
+
+
+    }
+
+    private void setListener() {
         //set listener to number buttons
         button0.setOnClickListener(new DisplayNumber());
         button1.setOnClickListener(new DisplayNumber());
@@ -43,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         button9.setOnClickListener(new DisplayNumber());
 
         //set listener to function buttons
-            buttonDivide.setOnClickListener(new Calculate());
-            buttonMultiply.setOnClickListener(new Calculate());
-            buttonPlus.setOnClickListener(new Calculate());
-            buttonMinus.setOnClickListener(new Calculate());
+        buttonDivide.setOnClickListener(new Calculate());
+        buttonMultiply.setOnClickListener(new Calculate());
+        buttonPlus.setOnClickListener(new Calculate());
+        buttonMinus.setOnClickListener(new Calculate());
 
 
         buttonEqual.setOnClickListener(new Calculate());
